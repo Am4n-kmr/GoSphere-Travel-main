@@ -5,7 +5,7 @@
    */
 
   --battleship-gray: hsl(0, 0%, 53%);
-  --viridian-green: hsl(180, 98%, 31%);
+  --viridian-green:#002855;
   --silver-chalice: hsl(0, 0%, 69%);
   --mikado-yellow: hsl(47, 98%, 50%);
   --granite-gray: hsl(0, 0%, 40%);
@@ -281,6 +281,7 @@ body {
   height: 88px;
   overflow: hidden;
   transition: 0.25s var(--cubic-out);
+  justify-content: space-between;
 }
 
 .header.active {
@@ -295,11 +296,6 @@ body {
   align-items: center;
 }
 
-.logo img{
-  height: 53px;
-  width: 110px;
-}
-
 .nav-toggle-btn.active .open,
 .nav-toggle-btn .close { display: none; }
 
@@ -312,6 +308,23 @@ body {
   --ionicon-stroke-width: 40px;
 }
 
+.logo{
+  font-size: 50px;
+  font-family: var(--ff-comforter-brush);
+  
+}
+.logo a {
+  color: white;
+  display: flex;
+  
+  
+}
+
+.logo a span {
+  color:hsl(47, 98%, 50%);
+}
+
+
 .navbar {
   width: 100%;
   padding: 20px 10px;
@@ -319,13 +332,18 @@ body {
   visibility: hidden;
   transition: var(--transition-1);
 }
+.navbar ul li{
+  margin: 0px 0px;
+}
 
 .header.active .navbar {
   opacity: 1;
   visibility: visible;
 }
 
-.navbar-list { margin-bottom: 15px; }
+.navbar-list { 
+  margin-bottom: 15px; 
+}
 
 .navbar-link {
   color: var(--white-1);

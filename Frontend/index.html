@@ -1,878 +1,863 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   GoSphere - Explore the Globe
-  </title>
-  <!--favicon-->
-  <link href="./favicon.svg" rel="shortcut icon" type="image/svg+xml"/>
-  <!--custom css link-->
-  <link href="style.css" rel="stylesheet"/>
-  <!--google font link-->
-  <link href="https://fonts.googleapis.com" rel="preconnect"/>
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&amp;family=Comforter+Brush&amp;family=Heebo:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
- </head>
- <body id="top">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <!-- HEADER-->
-  <header class="header" data-header="">
-   <div class="container">
-    <div class="logo">
-     <img alt="logo" src="./logo.svg"/><p>GoSphere</p>
-    </div>
-    <button aria-label="Toggle Menu" class="nav-toggle-btn" data-nav-toggle-btn="">
-     <ion-icon class="open" name="menu-outline">
-     </ion-icon>
-     <ion-icon class="close" name="close-outline">
-     </ion-icon>
-    </button>
-    <nav class="navbar">
-     <ul class="navbar-list">
-      <li>
-       <a class="navbar-link" href="#home">
-        Home
-       </a>
-      </li>
-      <li>
-       <a class="navbar-link" href="Destinations\destinations.html">
-        Destinations
-       </a>
-      </li>
-      <li>
-       <a class="navbar-link" href="#tour">
-        Tours
-       </a>
-      </li>
-      <li>
-       <a class="navbar-link" href="#blog">
-        Blog
-       </a>
-      </li>
-      <li>
-       <a class="navbar-link" href="About\about.html">
-        About Us
-       </a>
-      </li>
-      <li>
-       <a class="navbar-link" href="Contact\contact.html">
-        Contact Us
-       </a>
-      </li>
-     </ul>
-     <a class="btn btn-secondary" href="Booking\book.html">
-      Book Now
-     </a>
-    </nav>
-   </div>
-  </header>
-  <main>
-   <article>
+    <!--favicon-->
+    <link href="./favicon.svg" rel="shortcut icon" type="image/svg+xml" />
+    <!--custom css link-->
+    <link href="style.css" rel="stylesheet" />
+    <!--google font link-->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&amp;family=Comforter+Brush&amp;family=Heebo:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"/>
 
-    <!--HERO-->
-    <section class="section hero" id="home" style="background-image: url('./assets/images/hero-bg-bottom.png') url('./assets/images/hero-bg-top.png')">
-     <div class="container">
-      <img alt="Vector Shape" class="shape shape-1" height="61" src="./images/shape-1.png" width="61"/>
-      <img alt="Vector Shape" class="shape shape-2" height="74" src="./images/shape-2.png" width="56"/>
-      <img alt="Vector Shape" class="shape shape-3" height="72" src="./images/shape-3.png" width="57"/>
-      <div class="hero-content">
-       <p class="section-subtitle">
-        Explore Your Travel
-       </p>
-       <h2 class="hero-title">
-        Trusted Travel Agency
-       </h2>
-       <p class="hero-text">
-        GoSphere is your trusted travel agency, offering personalized travel experiences, exclusive deals, and expert guidance. From dream vacations to adventure tours, we handle every detail to make your journey unforgettable.
-       </p>
-       <div class="btn-group">
-        <a class="btn btn-primary" href="#contact">
-         Contact Us
-        </a>
-        <a class="btn btn-outline" href="#">
-         Learn More
-        </a>
-       </div>
+    <title>GoSphere - Explore the Globe</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER-->
+    <header class="header">
+      <div class="container">
+        <div class ="logo"><a href="/Frontend">Go<span>Sphere</span></a></div>
+
+        <div> <nav class="navbar">
+          <ul class="navbar-list">
+            <li><a class="navbar-link" href="#home">Home</a></li>
+            <li><a class="navbar-link" href="#destination">Destinations</a></li>
+            <li><a class="navbar-link" href="#tour">Tours</a></li>
+            <li><a class="navbar-link" href="#blog">Blog</a></li>
+            <li><a class="navbar-link" href="About\about.html">About Us</a></li>
+            <li><a class="navbar-link" href="Contact\contact.html">Contact Us</a></li>
+            <a class="btn btn-secondary" href="Booking\book.html">Book Now</a>
+          </ul>
+          
+        </nav></div>
+
+       
       </div>
-      <figure class="hero-banner">
-       <img alt="hero banner" class="w-100" height="812" loading="lazy" src="./images/hero-banner.png" width="686"/>
-      </figure>
-     </div>
-    </section>
+    </header>
 
-    <!--DESTINATION-->
-    <section class="section destination" id="destination">
-     <div class="container">
-      <p class="section-subtitle">
-       Destinations
-      </p>
-      <h2 class="h2 section-title">
-       Choose Your Place
-      </h2>
-      <ul class="destination-list">
-       <li class="w-50">
-        <a class="destination-card" href="#">
-         <figure class="card-banner">
-          <img alt="Malé, Maldives" class="img-cover" height="1100" loading="lazy" src="./images/varanasi.jpg" width="1140"/>
-         </figure>
-         <div class="card-content">
-          <p class="card-subtitle">
-           Varanasi
-          </p>
-          <h3 class="h3 card-title">
-           Uttar Pradesh
-          </h3>
-         </div>
-        </a>
-       </li>
-       <li class="w-50">
-        <a class="destination-card" href="#">
-         <figure class="card-banner">
-          <img alt="Bangkok, Thailand" class="img-cover" height="1100" loading="lazy" src="./images/Jaipur.jpg" width="1140"/>
-         </figure>
-         <div class="card-content">
-          <p class="card-subtitle">
-           Jaipur
-          </p>
-          <h3 class="h3 card-title">
-           Rajasthan
-          </h3>
-         </div>
-        </a>
-       </li>
-       <li>
-        <a class="destination-card" href="#">
-         <figure class="card-banner">
-          <img alt="Kuala Lumpur, Malaysia" class="img-cover" height="480" loading="lazy" src="./images/arambol-beach.jpg" width="1110"/>
-         </figure>
-         <div class="card-content">
-          <p class="card-subtitle">
-           Arambol Beach
-          </p>
-          <h3 class="h3 card-title">
-           Goa
-          </h3>
-         </div>
-        </a>
-       </li>
-       <li>
-        <a class="destination-card" href="#">
-         <figure class="card-banner">
-          <img alt="Kathmandu, Nepal" class="img-cover" height="480" loading="lazy" src="./images/Amritsar.jpg" width="1110"/>
-         </figure>
-         <div class="card-content">
-          <p class="card-subtitle">
-           Amritsar
-          </p>
-          <h3 class="h3 card-title">
-           Punjab
-          </h3>
-         </div>
-        </a>
-       </li>
-       <li>
-        <a class="destination-card" href="#">
-         <figure class="card-banner">
-          <img alt="Jakarta, Indonesia" class="img-cover" height="480" loading="lazy" src="./images/Manali.jpg" width="1110"/>
-         </figure>
-         <div class="card-content">
-          <p class="card-subtitle">
-           Manali
-          </p>
-          <h3 class="h3 card-title">
-           Himachal Pradesh
-          </h3>
-         </div>
-        </a>
-       </li>
-      </ul>
-     </div>
-    </section>
+    <main>
+      <article>
+        <!--HERO-->
+        <section
+          class="section hero"
+          id="home"
+          style="
+            background-image: url('./assets/images/hero-bg-bottom.png')
+              url('./assets/images/hero-bg-top.png');
+          "
+        >
+          <div class="container">
+            <img
+              alt="Vector Shape"
+              class="shape shape-1"
+              height="61"
+              src="./images/shape-1.png"
+              width="61"
+            />
+            <img
+              alt="Vector Shape"
+              class="shape shape-2"
+              height="74"
+              src="./images/shape-2.png"
+              width="56"
+            />
+            <img
+              alt="Vector Shape"
+              class="shape shape-3"
+              height="72"
+              src="./images/shape-3.png"
+              width="57"
+            />
+            <div class="hero-content">
+              <p class="section-subtitle">Explore Your Travel</p>
+              <h2 class="hero-title">Trusted Travel Agency</h2>
+              <p class="hero-text">
+                GoSphere is your trusted travel agency, offering personalized
+                travel experiences, exclusive deals, and expert guidance. From
+                dream vacations to adventure tours, we handle every detail to
+                make your journey unforgettable.
+              </p>
+              <div class="btn-group">
+                <a class="btn btn-primary" href="Contact\contact.html"> Contact Us </a>
+                <a class="btn btn-outline" href="#"> Learn More </a>
+              </div>
+            </div>
+            <figure class="hero-banner">
+              <img
+                alt="hero banner"
+                class="w-100"
+                height="812"
+                loading="lazy"
+                src="./images/hero-banner.png"
+                width="686"
+              />
+            </figure>
+          </div>
+        </section>
 
-    <!--POPULAR-->
-    <section class="section popular" id="tour">
-     <div class="container">
-      <p class="section-subtitle">
-       Featured Tours
-      </p>
-      <h2 class="h2 section-title">
-       Most Popular Tours
-      </h2>
-      <ul class="popular-list">
-       <li>
-        <div class="popular-card">
-         <figure class="card-banner">
-          <a href="#">
-           <img alt="Havelock Island, Andaman and Nicobar" class="img-cover" height="400" loading="lazy" src="./images/Havelock Island.avif" width="640"/>
-          </a>
-          <span class="card-badge">
-           <ion-icon name="time-outline">
-           </ion-icon>
-           <time datetime="P8D">
-            8 Days
-           </time>
-          </span>
-         </figure>
-         <div class="card-content">
-          <div class="card-wrapper">
-           <div class="card-price">
-            From ₹30000.00
-           </div>
-           <div class="card-rating">
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star-outline">
-            </ion-icon>
-            <data value="345">
-             (345)
-            </data>
-           </div>
+        <!--DESTINATION-->
+        <section class="section destination" id="destination">
+          <div class="container">
+            <p class="section-subtitle">Destinations</p>
+            <h2 class="h2 section-title">Choose Your Place</h2>
+            <ul class="destination-list">
+              <li class="w-50">
+                <a class="destination-card" href="#">
+                  <figure class="card-banner">
+                    <img
+                      alt="Malé, Maldives"
+                      class="img-cover"
+                      height="1100"
+                      loading="lazy"
+                      src="./images/varanasi.jpg"
+                      width="1140"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-subtitle">Varanasi</p>
+                    <h3 class="h3 card-title">Uttar Pradesh</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="w-50">
+                <a class="destination-card" href="#">
+                  <figure class="card-banner">
+                    <img
+                      alt="Bangkok, Thailand"
+                      class="img-cover"
+                      height="1100"
+                      loading="lazy"
+                      src="./images/Jaipur.jpg"
+                      width="1140"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-subtitle">Jaipur</p>
+                    <h3 class="h3 card-title">Rajasthan</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="destination-card" href="#">
+                  <figure class="card-banner">
+                    <img
+                      alt="Kuala Lumpur, Malaysia"
+                      class="img-cover"
+                      height="480"
+                      loading="lazy"
+                      src="./images/arambol-beach.jpg"
+                      width="1110"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-subtitle">Arambol Beach</p>
+                    <h3 class="h3 card-title">Goa</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="destination-card" href="#">
+                  <figure class="card-banner">
+                    <img
+                      alt="Kathmandu, Nepal"
+                      class="img-cover"
+                      height="480"
+                      loading="lazy"
+                      src="./images/Amritsar.jpg"
+                      width="1110"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-subtitle">Amritsar</p>
+                    <h3 class="h3 card-title">Punjab</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="destination-card" href="#">
+                  <figure class="card-banner">
+                    <img
+                      alt="Jakarta, Indonesia"
+                      class="img-cover"
+                      height="480"
+                      loading="lazy"
+                      src="./images/Manali.jpg"
+                      width="1110"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <p class="card-subtitle">Manali</p>
+                    <h3 class="h3 card-title">Himachal Pradesh</h3>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
-          <h3 class="card-title">
-           <a href="#">
-            Havelock is an absolute delight for romantic souls. You can expect extremely hot days with temperatures reaching up to 32℃. Don't forget to indulge in adventure activities at Havelock.
-           </a>
-          </h3>
-          <address class="card-location">
-           Havelock Island, Andaman and Nicobar
-          </address>
-         </div>
-        </div>
-       </li>
-       <li>
-        <div class="popular-card">
-         <figure class="card-banner">
-          <a href="#">
-           <img alt="Mahabaleshwar, Mumbai" class="img-cover" height="400" loading="lazy" src="./images/Mahabaleshwar.jpg" width="640"/>
-          </a>
-          <span class="card-badge">
-           <ion-icon name="time-outline">
-           </ion-icon>
-           <time datetime="P4D">
-            4 Days
-           </time>
-          </span>
-         </figure>
-         <div class="card-content">
-          <div class="card-wrapper">
-           <div class="card-price">
-            From ₹8000.00
-           </div>
-           <div class="card-rating">
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star-outline">
-            </ion-icon>
-            <data value="245">
-             (245)
-            </data>
-           </div>
-          </div>
-          <h3 class="card-title">
-           <a href="#">
-            Mahabaleshwar is the ideal hill station getaway from Mumbai with its mesmerising waterfalls, old forts, historic temples and long stretches of vibrant strawberry plantations.
-           </a>
-          </h3>
-          <address class="card-location">
-           Mahabaleshwar, Mumbai
-          </address>
-         </div>
-        </div>
-       </li>
-       <li>
-        <div class="popular-card">
-         <figure class="card-banner">
-          <a href="#">
-           <img alt="Ujjain, Madhya Pradesh" class="img-cover" height="400" loading="lazy" src="./images/ujjain.jpg" width="640"/>
-          </a>
-          <span class="card-badge">
-           <ion-icon name="time-outline">
-           </ion-icon>
-           <time datetime="P2D">
-            2 Days
-           </time>
-          </span>
-         </figure>
-         <div class="card-content">
-          <div class="card-wrapper">
-           <div class="card-price">
-            From ₹3000.00
-           </div>
-           <div class="card-rating">
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star-outline">
-            </ion-icon>
-            <data value="546">
-             (546)
-            </data>
-           </div>
-          </div>
-          <h3 class="card-title">
-           <a href="#">
-            One of the seven sacred Hindu cities, Ujjai is located on the banks of river Kshipra and is land the magnificent Kumbh Mela. Iconic religious sites and a web of lively lanes are a vibrant display of Ujjain's art and heritage.
-           </a>
-          </h3>
-          <address class="card-location">
-           Ujjain, Madhya Pradesh
-          </address>
-         </div>
-        </div>
-       </li>
-       <li>
-        <div class="popular-card">
-         <figure class="card-banner">
-          <a href="#">
-           <img alt="chikmagalur, Karnataka" class="img-cover" height="400" loading="lazy" src="./images/chikmagulur.avif" width="640"/>
-          </a>
-          <span class="card-badge">
-           <ion-icon name="time-outline">
-           </ion-icon>
-           <time datetime="P5D">
-            5 Days
-           </time>
-          </span>
-         </figure>
-         <div class="card-content">
-          <div class="card-wrapper">
-           <div class="card-price">
-            From ₹12000.00
-           </div>
-           <div class="card-rating">
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star-outline">
-            </ion-icon>
-            <data value="189">
-             (189)
-            </data>
-           </div>
-          </div>
-          <h3 class="card-title">
-           <a href="#">
-            A hill station at the foothills of the Mullayanagiri peak in the Western Ghats in Karnataka, Chikmagalur entices with trekking trails, coffee plantations, rivers, waterfalls, temples and wildlife.
-           </a>
-          </h3>
-          <address class="card-location">
-           Western Ghats, Karnataka
-          </address>
-         </div>
-        </div>
-       </li>
-       <li>
-        <div class="popular-card">
-         <figure class="card-banner">
-          <a href="#">
-           <img alt="Rameshwaram, Tamil Nadu" class="img-cover" height="400" loading="lazy" src="./images/Rameshwaram.jpg" width="640"/>
-          </a>
-          <span class="card-badge">
-           <ion-icon name="time-outline">
-           </ion-icon>
-           <time datetime="P8D">
-            8 Days
-           </time>
-          </span>
-         </figure>
-         <div class="card-content">
-          <div class="card-wrapper">
-           <div class="card-price">
-            From ₹15000.00
-           </div>
-           <div class="card-rating">
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star-outline">
-            </ion-icon>
-            <data value="679">
-             (679)
-            </data>
-           </div>
-          </div>
-          <h3 class="card-title">
-           <a href="#">
-            Made famous by the epic Ramayana, Rameshwaram is a quaint beach town and a popular Hindu pilgrimage destination that also attracts nature lovers and adventure enthusiasts
-           </a>
-          </h3>
-          <address class="card-location">
-           Rameshwaram, Tamil Nadu
-          </address>
-         </div>
-        </div>
-       </li>
-       <li>
-        <div class="popular-card">
-         <figure class="card-banner">
-          <a href="#">
-           <img alt="Pondicherry, India" class="img-cover" height="400" loading="lazy" src="./images/Pondicherry.avif" width="640"/>
-          </a>
-          <span class="card-badge">
-           <ion-icon name="time-outline">
-           </ion-icon>
-           <time datetime="P8D">
-            8 Days
-           </time>
-          </span>
-         </figure>
-         <div class="card-content">
-          <div class="card-wrapper">
-           <div class="card-price">
-            From ₹25000.00
-           </div>
-           <div class="card-rating">
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star">
-            </ion-icon>
-            <ion-icon name="star-outline">
-            </ion-icon>
-            <data value="389">
-             (389)
-            </data>
-           </div>
-          </div>
-          <h3 class="card-title">
-           <a href="#">
-            A fascinating, small town with enough elements to charm its visitors, Pondicherry whose official name was changed to Puducherry in 2006, was once the largest French colony in India.
-           </a>
-          </h3>
-          <address class="card-location">
-           Pondicherry, India
-          </address>
-         </div>
-        </div>
-       </li>
-      </ul>
-     </div>
-    </section>
+        </section>
 
-    <!--ABOUT-->
-    <section class="section about" id="about">
-     <div class="container">
-      <div class="about-content">
-       <p class="section-subtitle">
-        About Us
-       </p>
-       <h2 class="h2 section-title">
-        Explore all tour of the world with us.
-       </h2>
-       <p class="about-text">
-        Welcome to GoSphere, your trusted partner for unforgettable travel experiences. Founded with a passion for exploration and a deep love for travel, we specialize in curating personalized journeys that create lasting memories. Whether you’re dreaming of a relaxing beach vacation, an adventurous mountain trek, or a cultural city tour, we bring your travel desires to life with ease and expertise.
-       </p>
-       <ul class="about-list">
-        <li class="about-item">
-         <div class="about-item-icon">
-          <ion-icon name="compass">
-          </ion-icon>
-         </div>
-         <div class="about-item-content">
-          <h3 class="h3 about-item-title">
-           Tour guide
-          </h3>
-          <p class="about-item-text">
-           Expert tour guides offering personalized, immersive experiences with rich insights into local history, culture, and hidden gems.
+        <!--POPULAR-->
+        <section class="section popular" id="tour">
+          <div class="container">
+            <p class="section-subtitle">Featured Tours</p>
+            <h2 class="h2 section-title">Most Popular Tours</h2>
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card">
+                  <figure class="card-banner">
+                    <a href="#">
+                      <img
+                        alt="Havelock Island, Andaman and Nicobar"
+                        class="img-cover"
+                        height="400"
+                        loading="lazy"
+                        src="./images/Havelock Island.avif"
+                        width="640"
+                      />
+                    </a>
+                    <span class="card-badge">
+                      <ion-icon name="time-outline"> </ion-icon>
+                      <time datetime="P8D"> 8 Days </time>
+                    </span>
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-wrapper">
+                      <div class="card-price">From ₹30000.00</div>
+                      <div class="card-rating">
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star-outline"> </ion-icon>
+                        <data value="345"> (345) </data>
+                      </div>
+                    </div>
+                    <h3 class="card-title">
+                      <a href="#">
+                        Havelock is an absolute delight for romantic souls. You
+                        can expect extremely hot days with temperatures reaching
+                        up to 32℃. Don't forget to indulge in adventure
+                        activities at Havelock.
+                      </a>
+                    </h3>
+                    <address class="card-location">
+                      Havelock Island, Andaman and Nicobar
+                    </address>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="popular-card">
+                  <figure class="card-banner">
+                    <a href="#">
+                      <img
+                        alt="Mahabaleshwar, Mumbai"
+                        class="img-cover"
+                        height="400"
+                        loading="lazy"
+                        src="./images/Mahabaleshwar.jpg"
+                        width="640"
+                      />
+                    </a>
+                    <span class="card-badge">
+                      <ion-icon name="time-outline"> </ion-icon>
+                      <time datetime="P4D"> 4 Days </time>
+                    </span>
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-wrapper">
+                      <div class="card-price">From ₹8000.00</div>
+                      <div class="card-rating">
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star-outline"> </ion-icon>
+                        <data value="245"> (245) </data>
+                      </div>
+                    </div>
+                    <h3 class="card-title">
+                      <a href="#">
+                        Mahabaleshwar is the ideal hill station getaway from
+                        Mumbai with its mesmerising waterfalls, old forts,
+                        historic temples and long stretches of vibrant
+                        strawberry plantations.
+                      </a>
+                    </h3>
+                    <address class="card-location">
+                      Mahabaleshwar, Mumbai
+                    </address>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="popular-card">
+                  <figure class="card-banner">
+                    <a href="#">
+                      <img
+                        alt="Ujjain, Madhya Pradesh"
+                        class="img-cover"
+                        height="400"
+                        loading="lazy"
+                        src="./images/ujjain.jpg"
+                        width="640"
+                      />
+                    </a>
+                    <span class="card-badge">
+                      <ion-icon name="time-outline"> </ion-icon>
+                      <time datetime="P2D"> 2 Days </time>
+                    </span>
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-wrapper">
+                      <div class="card-price">From ₹3000.00</div>
+                      <div class="card-rating">
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star-outline"> </ion-icon>
+                        <data value="546"> (546) </data>
+                      </div>
+                    </div>
+                    <h3 class="card-title">
+                      <a href="#">
+                        One of the seven sacred Hindu cities, Ujjai is located
+                        on the banks of river Kshipra and is land the
+                        magnificent Kumbh Mela. Iconic religious sites and a web
+                        of lively lanes are a vibrant display of Ujjain's art
+                        and heritage.
+                      </a>
+                    </h3>
+                    <address class="card-location">
+                      Ujjain, Madhya Pradesh
+                    </address>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="popular-card">
+                  <figure class="card-banner">
+                    <a href="#">
+                      <img
+                        alt="chikmagalur, Karnataka"
+                        class="img-cover"
+                        height="400"
+                        loading="lazy"
+                        src="./images/chikmagulur.avif"
+                        width="640"
+                      />
+                    </a>
+                    <span class="card-badge">
+                      <ion-icon name="time-outline"> </ion-icon>
+                      <time datetime="P5D"> 5 Days </time>
+                    </span>
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-wrapper">
+                      <div class="card-price">From ₹12000.00</div>
+                      <div class="card-rating">
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star-outline"> </ion-icon>
+                        <data value="189"> (189) </data>
+                      </div>
+                    </div>
+                    <h3 class="card-title">
+                      <a href="#">
+                        A hill station at the foothills of the Mullayanagiri
+                        peak in the Western Ghats in Karnataka, Chikmagalur
+                        entices with trekking trails, coffee plantations,
+                        rivers, waterfalls, temples and wildlife.
+                      </a>
+                    </h3>
+                    <address class="card-location">
+                      Western Ghats, Karnataka
+                    </address>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="popular-card">
+                  <figure class="card-banner">
+                    <a href="#">
+                      <img
+                        alt="Rameshwaram, Tamil Nadu"
+                        class="img-cover"
+                        height="400"
+                        loading="lazy"
+                        src="./images/Rameshwaram.jpg"
+                        width="640"
+                      />
+                    </a>
+                    <span class="card-badge">
+                      <ion-icon name="time-outline"> </ion-icon>
+                      <time datetime="P8D"> 8 Days </time>
+                    </span>
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-wrapper">
+                      <div class="card-price">From ₹15000.00</div>
+                      <div class="card-rating">
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star-outline"> </ion-icon>
+                        <data value="679"> (679) </data>
+                      </div>
+                    </div>
+                    <h3 class="card-title">
+                      <a href="#">
+                        Made famous by the epic Ramayana, Rameshwaram is a
+                        quaint beach town and a popular Hindu pilgrimage
+                        destination that also attracts nature lovers and
+                        adventure enthusiasts
+                      </a>
+                    </h3>
+                    <address class="card-location">
+                      Rameshwaram, Tamil Nadu
+                    </address>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="popular-card">
+                  <figure class="card-banner">
+                    <a href="#">
+                      <img
+                        alt="Pondicherry, India"
+                        class="img-cover"
+                        height="400"
+                        loading="lazy"
+                        src="./images/Pondicherry.avif"
+                        width="640"
+                      />
+                    </a>
+                    <span class="card-badge">
+                      <ion-icon name="time-outline"> </ion-icon>
+                      <time datetime="P8D"> 8 Days </time>
+                    </span>
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-wrapper">
+                      <div class="card-price">From ₹25000.00</div>
+                      <div class="card-rating">
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star"> </ion-icon>
+                        <ion-icon name="star-outline"> </ion-icon>
+                        <data value="389"> (389) </data>
+                      </div>
+                    </div>
+                    <h3 class="card-title">
+                      <a href="#">
+                        A fascinating, small town with enough elements to charm
+                        its visitors, Pondicherry whose official name was
+                        changed to Puducherry in 2006, was once the largest
+                        French colony in India.
+                      </a>
+                    </h3>
+                    <address class="card-location">Pondicherry, India</address>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--ABOUT-->
+        <section class="section about" id="about">
+          <div class="container">
+            <div class="about-content">
+              <p class="section-subtitle">About Us</p>
+              <h2 class="h2 section-title">
+                Explore all tour of the world with us.
+              </h2>
+              <p class="about-text">
+                Welcome to GoSphere, your trusted partner for unforgettable
+                travel experiences. Founded with a passion for exploration and a
+                deep love for travel, we specialize in curating personalized
+                journeys that create lasting memories. Whether you’re dreaming
+                of a relaxing beach vacation, an adventurous mountain trek, or a
+                cultural city tour, we bring your travel desires to life with
+                ease and expertise.
+              </p>
+              <ul class="about-list">
+                <li class="about-item">
+                  <div class="about-item-icon">
+                    <ion-icon name="compass"> </ion-icon>
+                  </div>
+                  <div class="about-item-content">
+                    <h3 class="h3 about-item-title">Tour guide</h3>
+                    <p class="about-item-text">
+                      Expert tour guides offering personalized, immersive
+                      experiences with rich insights into local history,
+                      culture, and hidden gems.
+                    </p>
+                  </div>
+                </li>
+                <li class="about-item">
+                  <div class="about-item-icon">
+                    <ion-icon name="briefcase"> </ion-icon>
+                  </div>
+                  <div class="about-item-content">
+                    <h3 class="h3 about-item-title">Friendly price</h3>
+                    <p class="about-item-text">
+                      "Enjoy unforgettable travel experiences with our friendly
+                      prices, designed to fit your budget without compromising
+                      on quality."
+                    </p>
+                  </div>
+                </li>
+                <li class="about-item">
+                  <div class="about-item-icon">
+                    <ion-icon name="umbrella"> </ion-icon>
+                  </div>
+                  <div class="about-item-content">
+                    <h3 class="h3 about-item-title">Reliable tour</h3>
+                    <p class="about-item-text">
+                      Experience unforgettable journeys with expert guides,
+                      personalized itineraries, and seamless travel planning for
+                      a hassle-free adventure every time.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <a class="btn btn-primary" href="#"> Booking Now </a>
+            </div>
+            <figure class="about-banner">
+              <img
+                alt=""
+                class="w-100"
+                height="842"
+                loading="lazy"
+                src="./images/about-banner.png"
+                width="756"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!--BLOG-->
+        <section class="section blog" id="blog">
+          <div class="container">
+            <p class="section-subtitle">From The Blog Post</p>
+            <h2 class="h2 section-title">Latest News &amp; Articles</h2>
+            <ul class="blog-list">
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner">
+                    <a href="#">
+                      <img
+                        alt="Varanasi is a mesmerizing blend of spirituality and culture. The ghats are breathtaking, rituals captivating. A boat ride at sunrise is unforgettable. Delicious street food and vibrant bazaars complete this enchanting experience."
+                        class="img-cover"
+                        height="400"
+                        loading="lazy"
+                        src="./images/varanasi1.jpg"
+                        width="640"
+                      />
+                    </a>
+                    <span class="card-badge">
+                      <ion-icon name="time-outline"> </ion-icon>
+                      <time datetime="12-04"> 04 Sept </time>
+                    </span>
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-wrapper">
+                      <div class="author-wrapper">
+                        <figure class="author-avatar">
+                          <img
+                            alt="Jay Kumar"
+                            height="30"
+                            src="./images/author-avatar.png"
+                            width="30"
+                          />
+                        </figure>
+                        <div>
+                          <a class="author-name" href="#"> user 2 </a>
+                          <p class="author-title">Admin</p>
+                        </div>
+                      </div>
+                      <time class="publish-time" datetime="10:30">
+                        10:30 AM
+                      </time>
+                    </div>
+                    <h3 class="card-title">
+                      <a href="#">
+                        Varanasi is a mesmerizing blend of spirituality and
+                        culture. The ghats are breathtaking, rituals
+                        captivating. A boat ride at sunrise is unforgettable.
+                        Delicious street food and vibrant bazaars complete this
+                        enchanting experience.
+                      </a>
+                    </h3>
+                    <a class="btn-link" href="#">
+                      <span> Read More </span>
+                      <ion-icon aria-hidden="true" name="arrow-forward-outline">
+                      </ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner">
+                    <a href="#">
+                      <img
+                        alt="Mahabaleshwar is a breathtaking hill station with stunning viewpoints, lush greenery, and serene lakes. Perfect for nature lovers, it offers a refreshing escape with delightful strawberries and cool weather year-round. Highly recommended!"
+                        class="img-cover"
+                        height="400"
+                        loading="lazy"
+                        src="./images/Mahabaleshwar.jpg"
+                        width="640"
+                      />
+                    </a>
+                    <span class="card-badge">
+                      <ion-icon name="time-outline"> </ion-icon>
+                      <time datetime="12-04"> 04 Dec </time>
+                    </span>
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-wrapper">
+                      <div class="author-wrapper">
+                        <figure class="author-avatar">
+                          <img
+                            alt="Kishan Kumar"
+                            height="30"
+                            src="./images/author-avatar.png"
+                            width="30"
+                          />
+                        </figure>
+                        <div>
+                          <a class="author-name" href="#"> user 1 </a>
+                          <p class="author-title">Admin</p>
+                        </div>
+                      </div>
+                      <time class="publish-time" datetime="6:30">
+                        06:30 PM
+                      </time>
+                    </div>
+                    <h3 class="card-title">
+                      <a href="#">
+                        Mahabaleshwar is a breathtaking hill station with
+                        stunning viewpoints, lush greenery, and serene lakes.
+                        Perfect for nature lovers, it offers a refreshing escape
+                        with delightful strawberries and cool weather
+                        year-round. Highly recommended!
+                      </a>
+                    </h3>
+                    <a class="btn-link" href="#">
+                      <span> Read More </span>
+                      <ion-icon aria-hidden="true" name="arrow-forward-outline">
+                      </ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner">
+                    <a href="#">
+                      <img
+                        alt="Chikmagalur dazzles with its lush coffee plantations, stunning hills, and serene waterfalls. The tranquil atmosphere and rich biodiversity make it a perfect getaway for nature lovers and adventure seekers alike. Highly recommended!"
+                        class="img-cover"
+                        height="400"
+                        loading="lazy"
+                        src="./images/chikmagulur.avif"
+                        width="640"
+                      />
+                    </a>
+                    <span class="card-badge">
+                      <ion-icon name="time-outline"> </ion-icon>
+                      <time datetime="12-04"> 09 Jan </time>
+                    </span>
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-wrapper">
+                      <div class="author-wrapper">
+                        <figure class="author-avatar">
+                          <img
+                            alt="Raju Kumar"
+                            height="30"
+                            src="./images/author-avatar.png"
+                            width="30"
+                          />
+                        </figure>
+                        <div>
+                          <a class="author-name" href="#"> user 3 </a>
+                          <p class="author-title">Admin</p>
+                        </div>
+                      </div>
+                      <time class="publish-time" datetime="08:45">
+                        08:45 AM
+                      </time>
+                    </div>
+                    <h3 class="card-title">
+                      <a href="#">
+                        Chikmagalur dazzles with its lush coffee plantations,
+                        stunning hills, and serene waterfalls. The tranquil
+                        atmosphere and rich biodiversity make it a perfect
+                        getaway for nature lovers and adventure seekers alike.
+                        Highly recommended!
+                      </a>
+                    </h3>
+                    <a class="btn-link" href="#">
+                      <span> Read More </span>
+                      <ion-icon aria-hidden="true" name="arrow-forward-outline">
+                      </ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!--FOOTER-->
+    <footer
+      class="footer"
+      id="Contact"
+      style="background-image: url('./assets/images/footer-bg.png')"
+    >
+      <div class="container">
+        <div class="footer-top">
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Top destination</p>
+            </li>
+            <li>
+              <a class="footer-link" href="#"> Varanasi, Uttar Pradesh </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"> Jaipur, Rajasthan </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"> Arambol beach, Goa </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"> Amritsar, Panjab </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"> Manali, Himachal Pradesh </a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Categories</p>
+            </li>
+            <li>
+              <a class="footer-link" href="#"> Travel </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"> Lifestyle </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"> Fashion </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"> Education </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"> Food &amp; Drink </a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Quick links</p>
+            </li>
+            <li>
+              <a class="footer-link" href="#about"> About </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"> Contact </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#tour"> Tours </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"> Booking </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"> Terms &amp; Conditions </a>
+            </li>
+          </ul>
+          <div class="footer-list">
+            <p class="footer-list-title">Get a newsletter</p>
+            <p class="newsletter-text">
+              For the latest deals and tips, travel no further than your inbox
+            </p>
+            <form action="" class="newsletter-form">
+              <input
+                class="newsletter-input"
+                name="email"
+                placeholder="Email address"
+                required=""
+                type="email"
+              />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="logo">
+            <img alt="logo" src="./logo.svg" />
+          </div>
+          <p class="copyright">
+            © 2024
+            <a class="copyright-link"> Aman Kumar </a>
+            . All Rights Reserved
           </p>
-         </div>
-        </li>
-        <li class="about-item">
-         <div class="about-item-icon">
-          <ion-icon name="briefcase">
-          </ion-icon>
-         </div>
-         <div class="about-item-content">
-          <h3 class="h3 about-item-title">
-           Friendly price
-          </h3>
-          <p class="about-item-text">
-           "Enjoy unforgettable travel experiences with our friendly prices, designed to fit your budget without compromising on quality."
-          </p>
-         </div>
-        </li>
-        <li class="about-item">
-         <div class="about-item-icon">
-          <ion-icon name="umbrella">
-          </ion-icon>
-         </div>
-         <div class="about-item-content">
-          <h3 class="h3 about-item-title">
-           Reliable tour
-          </h3>
-          <p class="about-item-text">
-           Experience unforgettable journeys with expert guides, personalized itineraries, and seamless travel planning for a hassle-free adventure every time.
-          </p>
-         </div>
-        </li>
-       </ul>
-       <a class="btn btn-primary" href="#">
-        Booking Now
-       </a>
+          <ul class="social-list">
+            <li>
+              <a class="social-link">
+                <ion-icon name="logo-instagram"> </ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="social-link">
+                <ion-icon name="logo-linkedin"> </ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="social-link">
+                <ion-icon name="logo-github" href="https://github.com/Am4n-kmr">
+                </ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <figure class="about-banner">
-       <img alt="" class="w-100" height="842" loading="lazy" src="./images/about-banner.png" width="756"/>
-      </figure>
-     </div>
-    </section>
+    </footer>
 
-    <!--BLOG-->
-    <section class="section blog" id="blog">
-     <div class="container">
-      <p class="section-subtitle">
-       From The Blog Post
-      </p>
-      <h2 class="h2 section-title">
-       Latest News &amp; Articles
-      </h2>
-      <ul class="blog-list">
-       <li>
-        <div class="blog-card">
-         <figure class="card-banner">
-          <a href="#">
-           <img alt="Varanasi is a mesmerizing blend of spirituality and culture. The ghats are breathtaking, rituals captivating. A boat ride at sunrise is unforgettable. Delicious street food and vibrant bazaars complete this enchanting experience." class="img-cover" height="400" loading="lazy" src="./images/varanasi1.jpg" width="640"/>
-          </a>
-          <span class="card-badge">
-           <ion-icon name="time-outline">
-           </ion-icon>
-           <time datetime="12-04">
-            04 Sept
-           </time>
-          </span>
-         </figure>
-         <div class="card-content">
-          <div class="card-wrapper">
-           <div class="author-wrapper">
-            <figure class="author-avatar">
-             <img alt="Jay Kumar" height="30" src="./images/author-avatar.png" width="30"/>
-            </figure>
-            <div>
-             <a class="author-name" href="#">
-              user 2
-             </a>
-             <p class="author-title">
-              Admin
-             </p>
-            </div>
-           </div>
-           <time class="publish-time" datetime="10:30">
-            10:30 AM
-           </time>
-          </div>
-          <h3 class="card-title">
-           <a href="#">
-            Varanasi is a mesmerizing blend of spirituality and culture. The ghats are breathtaking, rituals captivating. A boat ride at sunrise is unforgettable. Delicious street food and vibrant bazaars complete this enchanting experience.
-           </a>
-          </h3>
-          <a class="btn-link" href="#">
-           <span>
-            Read More
-           </span>
-           <ion-icon aria-hidden="true" name="arrow-forward-outline">
-           </ion-icon>
-          </a>
-         </div>
-        </div>
-       </li>
-       <li>
-        <div class="blog-card">
-         <figure class="card-banner">
-          <a href="#">
-           <img alt="Mahabaleshwar is a breathtaking hill station with stunning viewpoints, lush greenery, and serene lakes. Perfect for nature lovers, it offers a refreshing escape with delightful strawberries and cool weather year-round. Highly recommended!" class="img-cover" height="400" loading="lazy" src="./images/Mahabaleshwar.jpg" width="640"/>
-          </a>
-          <span class="card-badge">
-           <ion-icon name="time-outline">
-           </ion-icon>
-           <time datetime="12-04">
-            04 Dec
-           </time>
-          </span>
-         </figure>
-         <div class="card-content">
-          <div class="card-wrapper">
-           <div class="author-wrapper">
-            <figure class="author-avatar">
-             <img alt="Kishan Kumar" height="30" src="./images/author-avatar.png" width="30"/>
-            </figure>
-            <div>
-             <a class="author-name" href="#">
-              user 1
-             </a>
-             <p class="author-title">
-              Admin
-             </p>
-            </div>
-           </div>
-           <time class="publish-time" datetime="6:30">
-            06:30 PM
-           </time>
-          </div>
-          <h3 class="card-title">
-           <a href="#">
-            Mahabaleshwar is a breathtaking hill station with stunning viewpoints, lush greenery, and serene lakes. Perfect for nature lovers, it offers a refreshing escape with delightful strawberries and cool weather year-round. Highly recommended!
-           </a>
-          </h3>
-          <a class="btn-link" href="#">
-           <span>
-            Read More
-           </span>
-           <ion-icon aria-hidden="true" name="arrow-forward-outline">
-           </ion-icon>
-          </a>
-         </div>
-        </div>
-       </li>
-       <li>
-        <div class="blog-card">
-         <figure class="card-banner">
-          <a href="#">
-           <img alt="Chikmagalur dazzles with its lush coffee plantations, stunning hills, and serene waterfalls. The tranquil atmosphere and rich biodiversity make it a perfect getaway for nature lovers and adventure seekers alike. Highly recommended!" class="img-cover" height="400" loading="lazy" src="./images/chikmagulur.avif" width="640"/>
-          </a>
-          <span class="card-badge">
-           <ion-icon name="time-outline">
-           </ion-icon>
-           <time datetime="12-04">
-            09 Jan
-           </time>
-          </span>
-         </figure>
-         <div class="card-content">
-          <div class="card-wrapper">
-           <div class="author-wrapper">
-            <figure class="author-avatar">
-             <img alt="Raju Kumar" height="30" src="./images/author-avatar.png" width="30"/>
-            </figure>
-            <div>
-             <a class="author-name" href="#">
-              user 3
-             </a>
-             <p class="author-title">
-              Admin
-             </p>
-            </div>
-           </div>
-           <time class="publish-time" datetime="08:45">
-            08:45 AM
-           </time>
-          </div>
-          <h3 class="card-title">
-           <a href="#">
-            Chikmagalur dazzles with its lush coffee plantations, stunning hills, and serene waterfalls. The tranquil atmosphere and rich biodiversity make it a perfect getaway for nature lovers and adventure seekers alike. Highly recommended!
-           </a>
-          </h3>
-          <a class="btn-link" href="#">
-           <span>
-            Read More
-           </span>
-           <ion-icon aria-hidden="true" name="arrow-forward-outline">
-           </ion-icon>
-          </a>
-         </div>
-        </div>
-       </li>
-      </ul>
-     </div>
-    </section>
-   </article>
-  </main>
+    <!--GO TO TOP-->
+    <a aria-label="Go To Top" class="go-top" data-go-top="" href="#top">
+      <ion-icon name="chevron-up-outline"> </ion-icon>
+    </a>
 
-  <!--FOOTER-->
-  <footer class="footer" id="Contact" style="background-image: url('./assets/images/footer-bg.png')">
-   <div class="container">
-    <div class="footer-top">
-     <ul class="footer-list">
-      <li>
-       <p class="footer-list-title">
-        Top destination
-       </p>
-      </li>
-      <li>
-       <a class="footer-link" href="#">
-        Varanasi, Uttar Pradesh
-       </a>
-      </li>
-      <li>
-       <a class="footer-link" href="#">
-        Jaipur, Rajasthan
-       </a>
-      </li>
-      <li>
-       <a class="footer-link" href="#">
-        Arambol beach, Goa
-       </a>
-      </li>
-      <li>
-       <a class="footer-link" href="#">
-        Amritsar, Panjab
-       </a>
-      </li>
-      <li>
-       <a class="footer-link" href="#">
-        Manali, Himachal Pradesh
-       </a>
-      </li>
-     </ul>
-     <ul class="footer-list">
-      <li>
-       <p class="footer-list-title">
-        Categories
-       </p>
-      </li>
-      <li>
-       <a class="footer-link" href="#">
-        Travel
-       </a>
-      </li>
-      <li>
-       <a class="footer-link" href="#">
-        Lifestyle
-       </a>
-      </li>
-      <li>
-       <a class="footer-link" href="#">
-        Fashion
-      </a>
-      </li>
-      <li>
-       <a class="footer-link" href="#">
-        Education
-       </a>
-      </li>
-      <li>
-       <a class="footer-link" href="#">
-        Food &amp; Drink
-       </a>
-      </li>
-     </ul>
-     <ul class="footer-list">
-      <li>
-       <p class="footer-list-title">
-        Quick links
-       </p>
-      </li>
-      <li>
-       <a class="footer-link" href="#about">
-        About
-       </a>
-      </li>
-      <li>
-       <a class="footer-link" href="#">
-        Contact
-       </a>
-      </li>
-      <li>
-       <a class="footer-link" href="#tour">
-        Tours
-       </a>
-      </li>
-      <li>
-       <a class="footer-link" href="#">
-        Booking
-       </a>
-      </li>
-      <li>
-       <a class="footer-link" href="#">
-        Terms &amp; Conditions
-       </a>
-      </li>
-     </ul>
-     <div class="footer-list">
-      <p class="footer-list-title">
-       Get a newsletter
-      </p>
-      <p class="newsletter-text">
-       For the latest deals and tips, travel no further than your inbox
-      </p>
-      <form action="" class="newsletter-form">
-       <input class="newsletter-input" name="email" placeholder="Email address" required="" type="email"/>
-       <button class="btn btn-primary" type="submit">
-        Subscribe
-       </button>
-      </form>
-     </div>
-    </div>
-    <div class="footer-bottom">
-     <div class="logo">
-      <img alt="logo" src="./logo.svg"/>
-     </div>
-     <p class="copyright">
-      © 2024
-      <a class="copyright-link">
-       Aman Kumar
-      </a>
-      . All Rights Reserved
-     </p>
-     <ul class="social-list">
-      <li>
-       <a class="social-link">
-        <ion-icon name="logo-instagram">
-        </ion-icon>
-       </a>
-      </li>
-      <li>
-       <a class="social-link" >
-        <ion-icon name="logo-linkedin">
-        </ion-icon>
-       </a>
-      </li>
-      <li>
-       <a class="social-link" >
-        <ion-icon name="logo-github" href="https://github.com/Am4n-kmr">
-        </ion-icon>
-       </a>
-      </li>
-     </ul>
-    </div>
-   </div>
-  </footer>
+    <!--custom js link-->
+    <script src="script.js"></script>
 
-  <!--GO TO TOP-->
-  <a aria-label="Go To Top" class="go-top" data-go-top="" href="#top">
-   <ion-icon name="chevron-up-outline">
-   </ion-icon>
-  </a>
-
-  <!--custom js link-->
-  <script src="script.js">
-  </script>
-
-  <!--ionicon link-->
-  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module">
-  </script>
-  <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
-  </script>
- </body>
+    <!--ionicon link-->
+    <script
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      type="module"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
