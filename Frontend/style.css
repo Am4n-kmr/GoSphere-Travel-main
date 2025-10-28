@@ -316,15 +316,11 @@ body {
 .logo a {
   color: white;
   display: flex;
-  
-  
 }
 
 .logo a span {
   color:hsl(47, 98%, 50%);
 }
-
-
 .navbar {
   width: 100%;
   padding: 20px 10px;
