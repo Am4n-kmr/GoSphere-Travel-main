@@ -277,7 +277,7 @@ body {
 .header {
   position: sticky;
   background: var(--viridian-green);
-  padding-block: 20px;
+  padding-block: 25px;
   height: 88px;
   overflow: hidden;
   transition: 0.25s var(--cubic-out);
