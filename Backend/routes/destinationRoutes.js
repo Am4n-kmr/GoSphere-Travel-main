@@ -7,4 +7,4 @@ const router = express.Router();
 router.get("/", getDestinations);
 router.post("/", createDestination);
 
-export default router; // ✅ must have this
+export default router; 
