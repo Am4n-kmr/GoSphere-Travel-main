@@ -1,6 +1,9 @@
-// middleware/loggerMiddleware.js
-export function loggerMiddleware(req, res, next) {
-  const now = new Date().toISOString();
-  console.log(`[${now}] ${req.method} ${req.originalUrl}`);
-  next(); // proceed to next middleware or route
-}
+// Backend/middleware/errorMiddleware.js
+export const errorHandler = (err, req, res, next) => {
+  console.error("Error:", err.stack);
+  res.status(err.statusCode || 500).json({
+    success: false,
+    message: err.message || "Server Error",
+  });
+};
+
