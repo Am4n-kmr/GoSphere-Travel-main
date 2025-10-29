@@ -1,7 +1,6 @@
-// Backend/controllers/blogController.js
 import Blog from "../models/Blog.js";
 
-// @desc Get all blogs
+// @desc Get all Blogs
 export const getBlogs = async (req, res) => {
   try {
     const blogs = await Blog.find();
@@ -11,7 +10,7 @@ export const getBlogs = async (req, res) => {
   }
 };
 
-// @desc Create a new blog
+// @desc Create a new Blog
 export const createBlog = async (req, res) => {
   try {
     const { title, content, author } = req.body;

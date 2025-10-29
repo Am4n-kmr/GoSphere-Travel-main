@@ -1,7 +1,6 @@
-// Backend/controllers/destinationController.js
 import Destination from "../models/Destination.js";
 
-// @desc Get all destinations
+// @desc Get all Destinations
 export const getDestinations = async (req, res) => {
   try {
     const destinations = await Destination.find();
@@ -11,11 +10,16 @@ export const getDestinations = async (req, res) => {
   }
 };
 
-// @desc Create a new destination
+// @desc Create a new Destination
 export const createDestination = async (req, res) => {
   try {
     const { name, location, description, image } = req.body;
-    const destination = await Destination.create({ name, location, description, image });
+    const destination = await Destination.create({
+      name,
+      location,
+      description,
+      image,
+    });
     res.status(201).json(destination);
   } catch (err) {
     res.status(400).json({ message: err.message });

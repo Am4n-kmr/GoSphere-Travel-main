@@ -1,12 +1,12 @@
-/* ===== Import Fonts ===== */
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 
-/* ===== RESET & BASE STYLES ===== */
+/* Reset and Base Styles */
 :root {
-  --ff-abril-fatface: 'Abril Fatface', cursive;
-  --ff-comforter-brush: 'Comforter Brush', cursive;
-  --ff-heebo: 'Heebo', sans-serif;
-  --ff-body: 'Poppins', sans-serif;
+  --ff-abril-fatface: "Abril Fatface", cursive;
+  --ff-comforter-brush: "Comforter Brush", cursive;
+  --ff-heebo: "Heebo", sans-serif;
+  --ff-body: "Poppins", sans-serif;
 
   --clr-primary: #002855;
   --clr-accent: #ffc107;
@@ -32,7 +32,7 @@ body {
   line-height: 1.6;
 }
 
-/* ===== NAVBAR ===== */
+/* NavBar */
 .navbar {
   background: var(--clr-primary);
   color: white;
@@ -75,7 +75,7 @@ body {
   outline-offset: 4px;
 }
 
-/* ===== BOOKING SECTION ===== */
+/* Booking Section */
 .booking-section {
   padding: 3rem 0;
   background: var(--clr-light);
@@ -101,7 +101,7 @@ body {
   margin: auto;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
