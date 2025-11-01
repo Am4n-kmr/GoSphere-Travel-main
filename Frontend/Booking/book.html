@@ -24,11 +24,16 @@
       <div class="container">
         <h1>Book Your Dream Trip</h1>
         <p>
-          Fill in the details below and we’ll get back to you with the best
+          Fill in the details below and we'll get back to you with the best
           options.
         </p>
 
-        <form id="bookingForm" class="booking-form">
+        <form
+          id="bookingForm"
+          class="booking-form"
+          method="POST"
+          action="http://localhost:8080/api/bookings"
+        >
           <div class="form-group">
             <label for="name">Full Name</label>
             <input

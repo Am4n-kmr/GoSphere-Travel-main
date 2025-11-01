@@ -2,11 +2,12 @@ import mongoose from "mongoose";
 
 const bookingSchema = new mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+  name: String,
+  email: String,
   destination: String,
-  startDate: Date,
-  endDate: Date,
-  guests: Number,
-  totalPrice: Number,
+  numberofpeople: Number,
+  travelDate: Date,
+  requestSpecial:String
 });
 
 export default mongoose.model("Booking", bookingSchema);
