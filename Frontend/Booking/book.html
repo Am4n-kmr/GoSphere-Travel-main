@@ -28,6 +28,16 @@
           options.
         </p>
 
+        <!-- 👇 User info bar -->
+
+        <div id="user-info" class="user-info" style="display: none">
+          <div class="user-details">
+            <p id="username" class="user-name"></p>
+            <p id="useremail" class="user-email"></p>
+          </div>
+          <button id="logoutBtn" class="logout-btn">Logout</button>
+        </div>
+
         <form
           id="bookingForm"
           class="booking-form"
@@ -97,6 +107,20 @@
         </form>
       </div>
     </section>
+
+    <!-- Login Alert Popup -->
+    <div id="loginAlert" class="login-alert">
+      <div class="alert-box">
+        <h2>Login Required</h2>
+        <p>You need to log in to make a booking.</p>
+        <div class="alert-buttons">
+          <button id="goLogin">Login</button>
+          <button id="goHome">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="book.js"></script>
 
     <script src="book.js"></script>
   </body>

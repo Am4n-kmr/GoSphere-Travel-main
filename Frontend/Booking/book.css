@@ -1,7 +1,7 @@
-/* Import Fonts */
+/* ===== Import Fonts ===== */
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 
-/* Reset and Base Styles */
+/* ===== Root Variables ===== */
 :root {
   --ff-abril-fatface: "Abril Fatface", cursive;
   --ff-comforter-brush: "Comforter Brush", cursive;
@@ -19,6 +19,7 @@
   --fw-700: 700;
 }
 
+/* ===== Reset ===== */
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +33,7 @@ body {
   line-height: 1.6;
 }
 
-/* NavBar */
+/* ===== NAVBAR ===== */
 .navbar {
   background: var(--clr-primary);
   color: white;
@@ -75,7 +76,7 @@ body {
   outline-offset: 4px;
 }
 
-/* Booking Section */
+/* ===== BOOKING SECTION ===== */
 .booking-section {
   padding: 3rem 0;
   background: var(--clr-light);
@@ -94,7 +95,7 @@ body {
   margin-bottom: 2rem;
   font-size: 1rem;
 }
-
+/* ===== FORM ===== */
 .booking-form {
   background: white;
   max-width: 600px;
@@ -195,4 +196,138 @@ textarea {
   .booking-form {
     padding: 1.5rem;
   }
+
+  .user-info {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* ===== USER INFO BAR ===== */
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e9ecef;
+  padding: 20px 24px; /* 🟢 slightly reduced to pull content left */
+  border-radius: 12px;
+  margin: 0 auto 25px;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  max-width: 600px; /* aligns with booking form */
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  gap: 0;
+  margin-left: 1px; /* 🟢 gentle left shift */
+}
+
+.user-info .user-name {
+  font-weight: var(--fw-500);
+  color: rgb(60, 60, 60);
+  font-size: 1.3rem;
+  margin-bottom: 1px;
+  text-align: left; /* 🟢 force text to align left */
+  align-self: flex-start; /* 🟢 push username block to left edge */
+}
+
+.user-info .user-email {
+  color: #555;
+  font-size: 1rem;
+  font-weight: var(--fw-400);
+  margin-bottom: 0; /* 🟢 remove bottom space */
+  line-height: 1.2; /* 🟢 no extra vertical spacing */
+}
+
+/* ===== LOGOUT BUTTON ===== */
+.logout-btn {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: var(--fw-600);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+/* ===== LOGIN ALERT POPUP ===== */
+.login-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.alert-box {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+.alert-box h2 {
+  color: var(--clr-primary);
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.alert-box p {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.alert-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.alert-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#goLogin {
+  background: #0d6efd;
+  color: #fff;
+}
+
+#goLogin:hover {
+  background: #0b5ed7;
+  transform: scale(1.05);
+}
+
+#goHome {
+  background: #dc3545;
+  color: #fff;
+}
+
+#goHome:hover {
+  background: #bb2d3b;
+  transform: scale(1.05);
 }

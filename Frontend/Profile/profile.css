@@ -1,0 +1,252 @@
+/* ===== Import Fonts ===== */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ===== Reset & Base Styles ===== */
+:root {
+  --ff-abril-fatface: "Abril Fatface", cursive;
+  --ff-comforter-brush: "Comforter Brush", cursive;
+  --ff-heebo: "Heebo", sans-serif;
+  --ff-body: "Poppins", sans-serif;
+
+  --fs-1: 3.4rem;
+  --fs-2: 3.2rem;
+  --fs-3: 3rem;
+  --fs-4: 2.4rem;
+  --fs-5: 1.8rem;
+  --fs-6: 1.7rem;
+  --fs-7: 1.4rem;
+  --fs-8: 1.2rem;
+
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  --clr-primary: #002855;
+  --clr-accent: #ffc107;
+  --clr-light: #f8f9fa;
+  --clr-dark: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-body);
+  line-height: 1.6;
+  background: var(--clr-light);
+  color: var(--clr-dark);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background: var(--clr-primary);
+  color: white;
+  padding-block: 20px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 50px;
+  font-family: var(--ff-comforter-brush);
+}
+
+.navbar .logo span {
+  color: var(--clr-accent);
+}
+
+.navbar nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: var(--clr-accent);
+}
+
+.navbar nav a:focus {
+  outline: 2px solid var(--clr-accent);
+  outline-offset: 4px;
+}
+
+/* ===== Profile Section ===== */
+.about-section {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.about-section .container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-section h1 {
+  font-size: 2.5rem;
+  color: var(--clr-primary);
+  margin-bottom: 1rem;
+}
+
+.about-section h2 {
+  color: var(--clr-primary);
+  margin: 1.5rem 0 0.5rem;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0.5rem auto;
+  color: var(--clr-dark);
+  font-size: 1rem;
+}
+
+/* ===== Profile Card ===== */
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.team-member {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid var(--clr-accent);
+}
+
+.team-member h3 {
+  margin-top: 0.5rem;
+  color: var(--clr-primary);
+  font-size: 1.5rem;
+}
+
+.team-member p {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  background: var(--clr-primary);
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: var(--fw-600);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #084298;
+  transform: scale(1.05);
+}
+
+/* ===== Booking Cards ===== */
+#bookingList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+#bookingList .team-member {
+  width: 260px;
+  padding: 1.5rem;
+  border-left: 5px solid var(--clr-accent);
+}
+
+#bookingList .team-member h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--clr-primary);
+}
+
+#bookingList .team-member p {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: var(--clr-primary);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+.footer .social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: var(--clr-accent);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+  }
+
+  .navbar nav {
+    margin-top: 1rem;
+  }
+
+  .navbar nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #bookingList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 90%;
+  }
+}

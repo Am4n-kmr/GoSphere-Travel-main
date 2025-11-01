@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * navbar toggle
@@ -12,8 +12,6 @@ navToggleBtn.addEventListener("click", function () {
   header.classList.toggle("active");
 });
 
-
-
 /**
  * show go top btn when scroll window to 500px
  */
@@ -21,6 +19,7 @@ navToggleBtn.addEventListener("click", function () {
 const goTopBtn = document.querySelector("[data-go-top]");
 
 window.addEventListener("scroll", function () {
-  window.scrollY >= 500 ? goTopBtn.classList.add("active")
+  window.scrollY >= 500
+    ? goTopBtn.classList.add("active")
     : goTopBtn.classList.remove("active");
 });
